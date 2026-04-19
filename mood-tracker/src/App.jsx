@@ -1,5 +1,6 @@
 import { UserProvider } from './context/UserContext';
 import { ThemeProvider } from './context/ThemeContext';
+import { MoodProvider }  from './context/MoodContext';
 import NavBar    from './components/NavBar';
 import AppRoutes from './routes/AppRoutes';
 
@@ -7,6 +8,7 @@ function App() {
   return (
     <UserProvider>
       <ThemeProvider>
+        <MoodProvider>
         <NavBar />
         <h1 style={{ padding: '2rem' }}>
           Hi, welcome to your Mood Tracker! This is just a placeholder page for now, but we'll be building out the full app in the next few lessons. Stay tuned!
@@ -15,6 +17,7 @@ function App() {
         <main style={{ padding: '2rem' }}>
           <AppRoutes />
         </main>
+        </MoodProvider>
       </ThemeProvider>
     </UserProvider>
   );
