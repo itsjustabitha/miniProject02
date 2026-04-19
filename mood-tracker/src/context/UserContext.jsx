@@ -1,4 +1,4 @@
-// src/context/UserContext.jsx
+
 import React, { createContext, useState, useContext } from 'react';
 
 // This is the "empty container" — the Provider or "user" fills in later.
